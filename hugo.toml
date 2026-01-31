@@ -1,0 +1,86 @@
+baseURL = 'https://replace-me-with-your-domain.netlify.app/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+title = '言杂录'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+hasCJKLanguage = true
+enableEmoji = true
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[params]
+    defaultTheme = 'auto'
+    showReadingTime = true
+    showShareButtons = false
+    showPostMeta = true
+    ShowCodeCopyButtons = true
+    ShowToc = true
+    ShowBreadCrumbs = true
+    ShowPostNavLinks = true
+    description = "偶尔会更新的博客"
+    comments = true
+
+    [params.homeInfoParams]
+        Title = "👋 欢迎来到言杂录"
+        Content = ""
+
+    [params.assets]
+        disableHLJS = true
+        favicon = "/favicon.ico"
+        favicon16x16 = "/favicon-96x96.png"
+        favicon32x32 = "/favicon-96x96.png"
+        apple_touch_icon = "/apple-touch-icon.png"
+        
+    [params.fuseOpts]
+        isCaseSensitive = false
+        shouldSort = true
+        location = 0
+        distance = 1000
+        threshold = 0.4
+        minMatchCharLength = 0
+        keys = ["title", "permalink", "summary", "content"]
+
+[permalinks]
+    posts = "/archives/:slug/"
+
+[languages]
+    [languages.zh]
+        languageName = "Chinese"
+        weight = 1
+        
+[[languages.zh.menu.main]]
+    identifier = "archives"
+    name = "📚 归档"
+    url = "/archives/"
+    weight = 5
+
+[[languages.zh.menu.main]]
+    identifier = "tags"
+    name = "🏷️ 标签"
+    url = "/tags/"
+    weight = 10
+
+[[languages.zh.menu.main]]
+    identifier = "categories"
+    name = "📁 分类"
+    url = "/categories/"
+    weight = 15
+
+[[languages.zh.menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "/search/"
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "native"
+    tabWidth = 4
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

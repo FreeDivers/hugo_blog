@@ -1,0 +1,35 @@
+<script>
+(function() {
+    const poems = [
+        "蒹葭苍苍，白露为霜。所谓伊人，在水一方。",
+        "关关雎鸠，在河之洲。窈窕淑女，君子好逑。",
+        "死生契阔，与子成说。执子之手，与子偕老。",
+        "愿得一心人，白头不相离。",
+        "玲珑骰子安红豆，入骨相思知不知。",
+        "两情若是久长时，又岂在朝朝暮暮。",
+        "身无彩凤双飞翼，心有灵犀一点通。",
+        "曾经沧海难为水，除却巫山不是云。",
+        "山有木兮木有枝，心悦君兮君不知。",
+        "只愿君心似我心，定不负相思意。",
+        "平生不会相思，才会相思，便害相思。"
+    ];
+
+    function setRandomPoem() {
+        const element = document.querySelector('.home-info .entry-content');
+        if (element) {
+            const randomPoem = poems[Math.floor(Math.random() * poems.length)];
+            // 使用 innerHTML 以保留段落样式（如果有的话），或者直接替换文本
+            // PaperMod 的 markdownify 通常会生成 <p> 标签，所以我们要小心保留它
+            // 这里我们简单粗暴地替换内容，假设只有一段文字
+            element.innerHTML = `<p>${randomPoem}</p>`;
+        }
+    }
+
+    // 页面加载完成后执行
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setRandomPoem);
+    } else {
+        setRandomPoem();
+    }
+})();
+</script>
