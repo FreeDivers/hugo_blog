@@ -31,6 +31,10 @@ enableEmoji = true
         name = "rss"
         url = "/index.xml"
 
+    [[params.socialIcons]]
+        name = "uptimerobot"
+        url = "https://stats.uptimerobot.com/3u1qV7Swq6/800035701"
+
     [params.assets]
         disableHLJS = true
         favicon = "/favicon.ico"
