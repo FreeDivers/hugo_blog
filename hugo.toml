@@ -85,9 +85,9 @@ googleAnalytics = "G-54JQ3PJWRJ"
     weight = 20
 
 [[languages.zh.menu.main]]
-    identifier = "about"
-    name = "🙋‍♂️ 关于"
-    url = "/about/"
+    identifier = "guestbook"
+    name = "💬 留言"
+    url = "/guestbook/"
     weight = 25
 
 [markup]
