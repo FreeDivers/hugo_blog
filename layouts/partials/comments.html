@@ -1,10 +1,17 @@
 {{- /* Twikoo Comments */ -}}
+{{- $twikooLang := "zh-CN" -}}
+{{- if eq .Site.Language.Lang "en" -}}
+  {{- $twikooLang = "en-US" -}}
+{{- end -}}
+{{- /* Unify comment threads between /... and /en/... */ -}}
+{{- $commentPath := replaceRE "^/en/" "/" .RelPermalink -}}
 <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.43/dist/twikoo.all.min.js"></script>
 <script>
     twikoo.init({
         envId: 'https://twikoo.qinyan.org',
         el: '#tcomment',
-        lang: 'zh-CN',
+        lang: {{ printf "%q" $twikooLang | safeJS }},
+        path: {{ printf "%q" $commentPath | safeJS }},
     })
 </script>

@@ -1,0 +1,28 @@
+{{- $summary := "" -}}
+
+{{- with .Params.summary -}}
+  {{- $summary = . | plainify | htmlUnescape | chomp -}}
+{{- end -}}
+
+{{- if not $summary -}}
+  {{- with .Description -}}
+    {{- $summary = . | plainify | htmlUnescape | chomp -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (not $summary) (or .IsPage .IsSection) -}}
+  {{- $raw := .RawContent | plainify | htmlUnescape | chomp -}}
+  {{- if $raw -}}
+    {{- $summary = $raw | truncate 220 -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (not $summary) site.Params.description -}}
+  {{- $summary = site.Params.description | plainify | htmlUnescape | chomp -}}
+{{- end -}}
+
+{{- if and (not $summary) .Title -}}
+  {{- $summary = printf "%s - %s" .Title site.Title -}}
+{{- end -}}
+
+{{- $summary -}}

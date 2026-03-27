@@ -1,6 +1,7 @@
 baseURL = 'https://blog.qinyan.org/'
 languageCode = 'zh-cn'
 defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
 title = '言杂录'
 theme = 'PaperMod'
 
@@ -57,8 +58,33 @@ googleAnalytics = "G-54JQ3PJWRJ"
 
 [languages]
     [languages.zh]
+        title = "言杂录"
+        languageCode = "zh-CN"
         languageName = "Chinese"
+        contentDir = "content/zh"
         weight = 1
+
+    [languages.en]
+        title = "Miscellanyan"
+        languageCode = "en-US"
+        languageName = "English"
+        contentDir = "content/en"
+        weight = 2
+        
+        [languages.en.params]
+            description = "An occasionally updated blog"
+            
+            [languages.en.params.homeInfoParams]
+                Title = "👋 Welcome to Miscellanyan"
+                Content = ""
+            
+            [[languages.en.params.socialIcons]]
+                name = "rss"
+                url = "/en/index.xml"
+            
+            [[languages.en.params.socialIcons]]
+                name = "uptimerobot"
+                url = "https://stats.uptimerobot.com/3u1qV7Swq6/800035701"
         
 [[languages.zh.menu.main]]
     identifier = "archives"
@@ -87,6 +113,36 @@ googleAnalytics = "G-54JQ3PJWRJ"
 [[languages.zh.menu.main]]
     identifier = "guestbook"
     name = "💬 留言"
+    url = "/guestbook/"
+    weight = 25
+
+[[languages.en.menu.main]]
+    identifier = "archives"
+    name = "📚 Archives"
+    url = "/archives/"
+    weight = 5
+
+[[languages.en.menu.main]]
+    identifier = "tags"
+    name = "🏷️ Tags"
+    url = "/tags/"
+    weight = 10
+
+[[languages.en.menu.main]]
+    identifier = "categories"
+    name = "📁 Categories"
+    url = "/categories/"
+    weight = 15
+
+[[languages.en.menu.main]]
+    identifier = "search"
+    name = "🔍 Search"
+    url = "/search/"
+    weight = 20
+
+[[languages.en.menu.main]]
+    identifier = "guestbook"
+    name = "💬 Guestbook"
     url = "/guestbook/"
     weight = 25
 

@@ -8,7 +8,7 @@
   <meta property="og:title" content="{{ . }}">
 {{- end }}
 
-{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+{{- with partial "safe_summary.html" . }}
   <meta property="og:description" content="{{ . }}">
 {{- end }}
 
