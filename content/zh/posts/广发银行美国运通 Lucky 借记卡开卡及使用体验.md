@@ -1,5 +1,7 @@
 ---
 title: 广发银行美国运通 Lucky 借记卡开卡及使用体验
+description: "记录广发银行美国运通 Lucky 借记卡的申请、激活、线上线下使用体验，以及实际限制和适用场景。"
+summary: "记录广发银行美国运通 Lucky 借记卡的申请、激活、线上线下使用体验，以及实际限制和适用场景。"
 date: 2025-10-01T22:42:00+08:00
 draft: false
 slug: "9"
@@ -10,10 +12,6 @@ tags:
 categories:
   - 说说
 ---
-
-这张卡开通也有几个月了，想着还是写篇博客做个记录。
-
-<!--more-->  
 
 ![卡面](https://static.95508.com/cgbstatic/OMP/OMPDebitCardImgUpload/20230828/2023082814160729707107724974935.jpg)
 
@@ -68,5 +66,4 @@ categories:
 # 总结
 
 总体来说，这张卡比 Visa、Mastercard 的通用性差不少，很多地方不支持。如果招商银行没出[万事达借记卡普卡](https://market.cmbchina.com/MPage/online/240708104147586/ofwf.html)，我可能会推荐这张，但现在有更好的替代，就没必要特地去办了。
-
 

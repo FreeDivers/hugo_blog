@@ -1,5 +1,7 @@
 ---
 title: "How Can Hexo Optimize Images to Improve Page Load Speed?"
+description: "Use WebP conversion and lazy loading in Hexo to reduce image size, delay offscreen loading, and improve page load speed."
+summary: "Use WebP conversion and lazy loading in Hexo to reduce image size, delay offscreen loading, and improve page load speed."
 date: 2022-09-17T20:27:00+08:00
 draft: false
 slug: "5"

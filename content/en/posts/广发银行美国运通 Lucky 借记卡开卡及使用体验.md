@@ -1,5 +1,7 @@
 ---
 title: "Guangfa AmEx Lucky Debit Card Experience"
+description: "An application, activation, and usage review of the China Guangfa Bank American Express Lucky debit card across online, offline, and travel scenarios."
+summary: "An application, activation, and usage review of the China Guangfa Bank American Express Lucky debit card across online, offline, and travel scenarios."
 date: 2025-10-01T22:42:00+08:00
 draft: false
 slug: "9"

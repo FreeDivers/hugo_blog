@@ -1,5 +1,7 @@
 ---
 title: "Enable the Everything Plugin in PowerToys Run"
+description: "Connect PowerToys Run with the Everything plugin to enable fast NTFS-based filename search from the launcher."
+summary: "Connect PowerToys Run with the Everything plugin to enable fast NTFS-based filename search from the launcher."
 date: 2022-08-23T20:43:00+08:00
 draft: false
 slug: "1"

@@ -1,5 +1,7 @@
 ---
 title: "如何使用 Blender 渲染一张 Minecraft 地图？"
+description: "从 Mineways 选区导出 Minecraft 地图到 Blender，配置材质、光源、天空盒和摄像机，无需光影模组也能渲染高质量场景图。"
+summary: "从 Mineways 选区导出 Minecraft 地图到 Blender，配置材质、光源、天空盒和摄像机，无需光影模组也能渲染高质量场景图。"
 date: 2022-12-28T11:30:00+08:00
 draft: false
 slug: "6"
@@ -8,9 +10,6 @@ tags: ["Blender", "Minecraft", "教程", "游戏", "渲染"]
 
 categories: ["教程"]
 ---
-
-从Mineways选区导出地图至Blender，配置材质光源与天空盒，调整摄像机参数并渲染输出，无需安装光影模组即可生成高质量Minecraft场景截图。
-<!--more-->
 
 学会了就不用开光影截图了。一开始看到了这篇[文章](https://blog.phoenixlzx.com/2017/12/18/minecraft-3d-render-with-blender/)，虽然按照所讲述的方法确实成功了，不过自己亲身实践的时候感觉有些地方写的不大详细，因此打算在这篇文章的基础上写一篇更适合小白的文章。
 

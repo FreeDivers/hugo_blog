@@ -1,5 +1,7 @@
 ---
 title: "使用 Github Actions 自动部署 Hexo 以及解决文章更新时间被刷新的问题"
+description: "GitHub Actions 可自动部署 Hexo，需配置 Token 及远程仓库，并创建 workflow 文件实现自动化。为避免更新时间被重置，可手动或自动设置 updated 字段。"
+summary: "GitHub Actions 可自动部署 Hexo，需配置 Token 及远程仓库，并创建 workflow 文件实现自动化。为避免更新时间被重置，可手动或自动设置 updated 字段。"
 date: 2022-09-10T07:44:00+08:00
 draft: false
 slug: "3"
@@ -9,8 +11,6 @@ tags: ["教程", "Hexo", "Github"]
 categories: ["教程"]
 ---
 
-Github Actions 可自动部署 Hexo，需配置 Token 及远程仓库，并创建 workflow 文件实现自动化。为避免更新时间被重置，可手动或自动设置 updated 字段。
-<!--more-->
 # 配置 Token
 打开 [Github](https://github.com)，点击右上角头像，再点击「Settings」。
 

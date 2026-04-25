@@ -1,5 +1,7 @@
 ---
 title: "在浏览器尝试不同于用户脚本 UserScript 的用户样式 UserStyle"
+description: "Stylus 可修改网页 CSS，个性化外观。类似 Tampermonkey，但控制用户样式，支持安装、管理、自定义编写，优化浏览体验。"
+summary: "Stylus 可修改网页 CSS，个性化外观。类似 Tampermonkey，但控制用户样式，支持安装、管理、自定义编写，优化浏览体验。"
 date: 2022-09-10T10:35:00+08:00
 draft: false
 slug: "4"
@@ -8,9 +10,6 @@ tags: ["教程", "插件"]
 
 categories: ["教程"]
 ---
-
-Stylus 可修改网页 CSS，个性化外观。类似 Tampermonkey，但控制用户样式，支持安装、管理、自定义编写，优化浏览体验。
-<!--more-->
 
 # 介绍
 一个网页，通常会由以下三个构成部分组成，分别是：

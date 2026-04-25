@@ -1,5 +1,7 @@
 ---
 title: "Auto-Deploy Hexo and Fix Updated-Time Reset"
+description: "Auto-deploy a Hexo site with GitHub Actions by configuring a token, repository secrets, and workflow while preserving article update times."
+summary: "Auto-deploy a Hexo site with GitHub Actions by configuring a token, repository secrets, and workflow while preserving article update times."
 date: 2022-09-10T07:44:00+08:00
 draft: false
 slug: "3"

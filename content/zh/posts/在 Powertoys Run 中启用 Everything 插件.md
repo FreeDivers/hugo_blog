@@ -1,5 +1,7 @@
 ---
 title: "在 Powertoys Run 中启用 Everything 插件"
+description: "PowerToys Run 结合 Everything 插件，利用 NTFS 特性快速搜索文件，需安装插件并配置路径即可启用。"
+summary: "PowerToys Run 结合 Everything 插件，利用 NTFS 特性快速搜索文件，需安装插件并配置路径即可启用。"
 date: 2022-08-23T20:43:00+08:00
 draft: false
 slug: "1"
@@ -9,8 +11,6 @@ tags: ["教程", "软件", "Windows"]
 categories: ["教程"]
 ---
 
-PowerToys Run 结合 Everything 插件，利用 NTFS 特性快速搜索文件，需安装插件并配置路径即可启用。
-<!--more-->
 [Powertoys](https://github.com/microsoft/PowerToys) 是一款由微软和社区共同开发的开源的软件，Powertoys Run 便是其中的一个功能，它的作用类似于 Mac OS 上的「聚焦搜索」，在可以快速搜索文件的同时也有许多插件可以使用。但是搜索文件时依赖的是 Windows 中的「索引」，这东西不仅建立慢而且搜索速度也不见得会加快多少。[Everything](https://www.voidtools.com/) 的出现就可以利用 NTFS 格式的特性来快速搜索。那要怎么样才可以在 Powertoys Run 中使用 Everything 呢？
 
 # Everything工作原理

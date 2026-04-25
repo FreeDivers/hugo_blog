@@ -1,5 +1,7 @@
 ---
 title: "How to Render a Minecraft World with Blender"
+description: "Export Minecraft worlds from Mineways into Blender, configure materials, lighting, skyboxes, and cameras, then render high-quality scene images."
+summary: "Export Minecraft worlds from Mineways into Blender, configure materials, lighting, skyboxes, and cameras, then render high-quality scene images."
 date: 2022-12-28T11:30:00+08:00
 draft: false
 slug: "6"

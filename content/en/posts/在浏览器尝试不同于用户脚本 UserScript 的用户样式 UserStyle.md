@@ -1,5 +1,7 @@
 ---
 title: "Try UserStyle in Your Browser: A Different Path from UserScript"
+description: "Use Stylus to customize website CSS from the browser, manage user styles, and personalize page appearance without writing user scripts."
+summary: "Use Stylus to customize website CSS from the browser, manage user styles, and personalize page appearance without writing user scripts."
 date: 2022-09-10T10:35:00+08:00
 draft: false
 slug: "4"
