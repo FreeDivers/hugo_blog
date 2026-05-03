@@ -1,0 +1,97 @@
+:root {
+    --lazy-image-placeholder: linear-gradient(135deg, var(--code-bg), var(--theme));
+    --lazy-image-icon: rgba(30, 30, 30, 0.28);
+}
+
+[data-theme="dark"] {
+    --lazy-image-placeholder: linear-gradient(135deg, var(--entry), var(--code-bg));
+    --lazy-image-icon: rgba(218, 218, 219, 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --lazy-image-placeholder: linear-gradient(135deg, var(--entry), var(--code-bg));
+        --lazy-image-icon: rgba(218, 218, 219, 0.28);
+    }
+}
+
+.post-content .lazy-image {
+    position: relative;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    min-width: min(100%, 18rem);
+    min-height: clamp(9rem, 34vw, 16rem);
+    margin: 1rem 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--lazy-image-placeholder);
+}
+
+.post-content .lazy-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    border: 3px dotted var(--lazy-image-icon);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-content .lazy-image[style*="--lazy-image-ratio"] {
+    aspect-ratio: var(--lazy-image-ratio);
+    min-height: 0;
+}
+
+.post-content .lazy-image > img {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    border-radius: inherit;
+    background: transparent;
+}
+
+.post-content .lazy-image:not(.is-loaded) > img {
+    min-width: 100%;
+    min-height: inherit;
+}
+
+.post-content .lazy-image.is-loaded {
+    min-width: 0;
+    min-height: 0;
+    border-color: transparent;
+    background: transparent;
+}
+
+.post-content .lazy-image.is-loaded::before {
+    content: none;
+}
+
+.post-content .lazy-image.is-loaded > img {
+    min-width: 0;
+    min-height: 0;
+}
+
+.post-content .lazy-image--center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.post-content a .lazy-image {
+    box-shadow: none;
+}
+
+.post-content img[loading="lazy"]:not(.lazy-load):not(.in-text) {
+    min-width: min(100%, 18rem);
+    min-height: clamp(9rem, 34vw, 16rem);
+    background: var(--lazy-image-placeholder);
+}
+
+.post-content img[loading="lazy"]:not(.lazy-load):not(.in-text).is-loaded {
+    min-width: 0;
+    min-height: 0;
+    background: transparent;
+}

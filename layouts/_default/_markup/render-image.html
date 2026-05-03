@@ -1,0 +1,41 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $resource := false -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path }}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $resource = . -}}
+    {{- $src = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $src = printf "%s?%s" $src . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $src = printf "%s#%s" $src . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $imgClass := "lazy-load" -}}
+{{- with index .Attributes "class" -}}
+  {{- $imgClass = printf "%s %s" . $imgClass -}}
+{{- end -}}
+{{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy" "decoding" "async" "class" $imgClass) -}}
+{{- $wrapperClass := "lazy-image" -}}
+{{- if eq $u.Fragment "center" -}}
+  {{- $wrapperClass = printf "%s lazy-image--center" $wrapperClass -}}
+{{- end -}}
+{{- $wrapperStyle := "" -}}
+{{- with $resource -}}
+  {{- if eq .ResourceType "image" -}}
+    {{- $attributes = merge (dict "width" .Width "height" .Height) $attributes -}}
+    {{- $wrapperStyle = printf "--lazy-image-ratio:%d/%d;" .Width .Height -}}
+  {{- end -}}
+{{- end -}}
+<span class="{{ $wrapperClass }}"{{ with $wrapperStyle }}{{ printf " style=%q" . | safeHTMLAttr }}{{ end }}>
+  <img
+    {{- range $k, $v := $attributes -}}
+      {{- if $v -}}
+        {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+      {{- end -}}
+    {{- end -}}>
+</span>
+{{- /**/ -}}
