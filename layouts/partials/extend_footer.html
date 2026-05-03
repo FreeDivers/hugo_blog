@@ -1,3 +1,10 @@
+{{- if and .IsPage (eq .Type "posts") }}
+{{- with resources.Get "js/image-lightbox.js" }}
+{{- $lightboxJS := . | resources.Minify }}
+<script src="{{ $lightboxJS.RelPermalink }}" defer></script>
+{{- end }}
+{{- end }}
+
 <script>
 (function() {
     const poems = [
