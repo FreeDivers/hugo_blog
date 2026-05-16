@@ -10,6 +10,9 @@ tags:
 categories:
     - essay
 ---
+
+*This story is entirely fictional. Any resemblance to real events is purely coincidental.*
+
 In the first second of her smile, I forgave myself once more.
 
 I forgave myself for the restless wandering of my thoughts.
