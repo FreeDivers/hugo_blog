@@ -6,7 +6,6 @@ date: 2022-08-23T20:43:00+08:00
 draft: false
 slug: "1"
 tags:
-  - Tutorial
   - Software
   - Windows
 categories:

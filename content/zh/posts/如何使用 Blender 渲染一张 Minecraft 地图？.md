@@ -6,7 +6,7 @@ date: 2022-12-28T11:30:00+08:00
 draft: false
 slug: "6"
 
-tags: ["Blender", "Minecraft", "教程", "游戏", "渲染"]
+tags: ["Blender", "Minecraft", "游戏", "渲染"]
 
 categories: ["教程"]
 ---

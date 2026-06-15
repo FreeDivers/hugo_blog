@@ -6,7 +6,6 @@ date: 2022-09-10T10:35:00+08:00
 draft: false
 slug: "4"
 tags:
-  - Tutorial
   - Plugin
 categories:
   - Tutorials

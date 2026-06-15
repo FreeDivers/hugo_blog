@@ -6,7 +6,6 @@ date: 2022-09-17T20:27:00+08:00
 draft: false
 slug: "5"
 tags:
-  - Tutorial
   - Software
   - Hexo
 categories:

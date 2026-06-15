@@ -6,7 +6,7 @@ date: 2022-08-23T20:43:00+08:00
 draft: false
 slug: "1"
 
-tags: ["教程", "软件", "Windows"]
+tags: ["软件", "Windows"]
 
 categories: ["教程"]
 ---

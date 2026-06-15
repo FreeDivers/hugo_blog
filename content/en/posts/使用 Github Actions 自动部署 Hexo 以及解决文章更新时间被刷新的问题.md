@@ -6,7 +6,6 @@ date: 2022-09-10T07:44:00+08:00
 draft: false
 slug: "3"
 tags:
-  - Tutorial
   - Hexo
   - GitHub
 categories:

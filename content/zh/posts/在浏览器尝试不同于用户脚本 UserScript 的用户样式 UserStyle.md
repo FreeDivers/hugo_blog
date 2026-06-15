@@ -6,7 +6,7 @@ date: 2022-09-10T10:35:00+08:00
 draft: false
 slug: "4"
 
-tags: ["教程", "插件"]
+tags: ["插件"]
 
 categories: ["教程"]
 ---

@@ -8,7 +8,6 @@ slug: "6"
 tags:
   - Blender
   - Minecraft
-  - Tutorial
   - Gaming
   - Rendering
 categories:

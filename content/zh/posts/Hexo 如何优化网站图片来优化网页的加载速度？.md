@@ -6,7 +6,7 @@ date: 2022-09-17T20:27:00+08:00
 draft: false
 slug: "5"
 
-tags: ["教程", "软件", "Hexo"]
+tags: ["软件", "Hexo"]
 
 categories: ["教程"]
 ---
