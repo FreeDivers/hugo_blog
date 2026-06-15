@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: FreeDivers/hugo_blog
+  branch: main
+  # Cloudflare Worker OAuth 代理的地址（部署后把下面这行换成你自己的 worker 域名）
+  base_url: https://cms-auth.meteorite16888.workers.dev
+
+# 网页后台上传的图片存放位置
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+# 后台界面默认语言
+locale: zh
+
+collections:
+  # ── 中文文章 ──────────────────────────────
+  - name: posts_zh
+    label: "文章（中文）"
+    label_singular: "文章"
+    folder: content/zh/posts
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: "标题", name: title, widget: string }
+      - { label: "描述", name: description, widget: string, required: false }
+      - { label: "摘要", name: summary, widget: string, required: false }
+      - { label: "日期", name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "草稿", name: draft, widget: boolean, default: false, required: false }
+      - { label: "URL 编号 (slug)", name: slug, widget: string, required: false, hint: "决定文章网址 /archives/<这里>/，留空则用文件名" }
+      - { label: "标签", name: tags, widget: list, required: false }
+      - { label: "分类", name: categories, widget: list, required: false }
+      - { label: "正文", name: body, widget: markdown }
+
+  # ── 英文文章 ──────────────────────────────
+  - name: posts_en
+    label: "Posts (English)"
+    label_singular: "Post"
+    folder: content/en/posts
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Description", name: description, widget: string, required: false }
+      - { label: "Summary", name: summary, widget: string, required: false }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Draft", name: draft, widget: boolean, default: false, required: false }
+      - { label: "URL slug", name: slug, widget: string, required: false, hint: "Sets the post URL /archives/<this>/" }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Categories", name: categories, widget: list, required: false }
+      - { label: "Body", name: body, widget: markdown }
