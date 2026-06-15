@@ -17,6 +17,7 @@ googleAnalytics = "G-54JQ3PJWRJ"
     defaultTheme = 'auto'
     author = { name = "qinyan" }
     showReadingTime = true
+    ShowFullTextinRSS = true
     showShareButtons = false
     showPostMeta = true
     ShowCodeCopyButtons = true
