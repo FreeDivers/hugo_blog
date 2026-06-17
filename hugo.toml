@@ -15,7 +15,7 @@ googleAnalytics = "G-54JQ3PJWRJ"
 
 [params]
     defaultTheme = 'auto'
-    author = { name = "qinyan" }
+    author = "qinyan"
     showReadingTime = true
     ShowFullTextinRSS = true
     showShareButtons = false
